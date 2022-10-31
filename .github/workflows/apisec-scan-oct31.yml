@@ -66,6 +66,7 @@ jobs:
           # The name of the sarif format result file The file is written only if this property is provided.
           apisec-fail-on-high-vulns: true
           sarif-result-file: "apisec-results.sarif"
+          apisec-email-report: true
        - name: Import results
          uses: github/codeql-action/upload-sarif@v2
          with:
